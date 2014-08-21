@@ -16,7 +16,6 @@ It is fully intended to be used in conjunction with [Angular UI-Router](https://
 Then make sure your project includes all of the dependencies:
 
 ```html
-
 <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="bower_components/underscore/underscore.js"></script>
@@ -25,20 +24,19 @@ Then make sure your project includes all of the dependencies:
 
 ```
 
-## Usage and example
+
+## Example
 
 Check out the **[Demo](http://rodrigomartell.com/demos/cr-bootstrap-navbar/#/readme)** for more context.
-Here is the gist of how it works:
 
 Suppose we wanted to create the following navbar using data in UI Router's state configurations:
 
 ![Layout](/images/demo_layout.png)
 
-In your HTML, where you want your navbar, you'd place the directive and first and second level `ui-views`:
+In your HTML, where you want your navbar, you'd place the directive and first and second level `ui-view`s:
 
 ```html
-
-    <!-- Stuff here ....-->
+<!-- Stuff here ....-->
 
     <body ng-app="myapp">
         
@@ -61,7 +59,7 @@ In your HTML, where you want your navbar, you'd place the directive and first an
         </div>
     </body>
 
-    <!-- More stuff here ....-->
+<!-- More stuff here ....-->
 
 ```
 
@@ -76,7 +74,7 @@ angular
     ])
     .config(function($stateProvider, $urlRouterProvider){
 
-//     stuff here
+        //     stuff here
 
         $urlRouterProvider.otherwise('/readme');
 
@@ -185,16 +183,34 @@ angular
                     }
                 });
 
-//      More stuff here
+        // More stuff here
 
 });
 
 ```
 
-
 ## API
 
 The `bsNav` object contains the following properties
+
+```javascript
+bsNav : {
+
+    // defaults to "link" but can be "dropDownLink" (a link with 
+    // sub-links in a dropdown) or "brand" (a right-aligned link with "brand" bootstrap class)
+    type : "link" ,
+
+    // The text to display on the navbar for this state
+    textDisplay : "About" ,
+
+    // The link group (zero-based) `ul` this link belongs to (see picture above)
+    group : 1 ,
+
+    // Whether to align the link group left (default) or right. 
+    // It only needs to be declared on the first state belonging to the link group
+    align : "right" 
+}
+```
 
 `bsNav : {`
 
