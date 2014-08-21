@@ -1,0 +1,46 @@
+&lt;html&gt;
+
+    &lt;head&gt;
+        &lt;meta charset="utf-8"&gt;
+        &lt;title&gt;&lt;/title&gt;
+        &lt;meta name="description" content=""&gt;
+        &lt;meta name="viewport" content="width=device-width"&gt;
+        &lt;link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"&gt;
+        &lt;link rel="stylesheet" href="bower_components/ng-prettyjson/dist/ng-prettyjson.min.css"&gt;
+    &lt;/head&gt;
+
+    &lt;body ng-app="crBootstrapNavbarApp"&gt;
+
+        &lt;div cr-bootstrap-navbar css-inverse="true"&gt;&lt;/div&gt; &lt;!-- The navbar directive --&gt;
+
+        &lt;!-- Some demo content --&gt;
+        &lt;div class="container"&gt;
+
+            &lt;div class="row marketing"&gt;
+
+              &lt;div ui-view&gt; &lt;!-- First (top) view level --&gt;
+
+                &lt;div ui-view&gt;&lt;/div&gt; &lt;!-- Second level nesting --&gt;
+
+              &lt;/div&gt;
+
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;!-- Dependencies --&gt;
+        &lt;script src="bower_components/jquery/dist/jquery.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular/angular.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-ui-router/release/angular-ui-router.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/bootstrap/dist/js/bootstrap.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/underscore/underscore.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/angular-underscore/angular-underscore.js"&gt;&lt;/script&gt;
+        &lt;script src="bower_components/ng-prettyjson/dist/ng-prettyjson.min.js"&gt;&lt;/script&gt;
+        &lt;script src="src/cr-bootstrap-navbar.js"&gt;&lt;/script&gt; &lt;!-- The directive (installed through bower in production) --&gt;
+
+        &lt;!-- The app --&gt;
+        &lt;script src="scripts/app.js"&gt;&lt;/script&gt;
+        &lt;script src="scripts/munge_html.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+
+&lt;/html&gt;

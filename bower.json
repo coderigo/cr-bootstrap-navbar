@@ -1,0 +1,36 @@
+{
+  "name": "cr-bootstrap-navbar",
+  "version": "0.0.1",
+  "authors": [
+    "Rodrigo Martell <rodrigo.martell@gmail.com>"
+  ],
+  "main": "/src/cr-bootstrap-navbar.js",
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "demo",
+    "Gruntfile.js",
+    "package.json",
+    "bower.json"
+    "README.md",
+    "jshintrc",
+    ".jshintrc",
+    ".gitignore",
+    ".gitattributes",
+    ".editorconfig"
+  ],
+  "devDependencies": {
+    "ng-prettyjson": "~0.1.3",
+    "angular-mocks": "~1.2.22"
+  },
+  "dependencies": {
+    "angular": "~1.2.22",
+    "angular-ui-router": "~0.2.10",
+    "bootstrap": "~3.2.0",
+    "underscore": "~1.6.0",
+    "angular-underscore": "*",
+    "jquery": "~2.1.1",
+  }
+}

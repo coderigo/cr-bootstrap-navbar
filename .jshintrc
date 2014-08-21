@@ -1,0 +1,19 @@
+{
+    "strict"       : true,
+    "curly"        : true,
+    "immed"        : true,
+    "newcap"       : true,
+    "noarg"        : true,
+    "sub"          : true,
+    "boss"         : true,
+    "eqnull"       : true,
+    "indent"       : 4,
+    "quotmark"     : "single",
+    "trailing"     : true,
+    "globalstrict" : true,
+    "node"         : true,
+    "globals"      : {
+        "angular" : false,
+        "_"       : false
+    }
+}
