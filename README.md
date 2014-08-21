@@ -17,15 +17,11 @@ Then make sure your project includes all of the dependencies:
 
 ```html
 
-    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-
-    <script src="bower_components/underscore/underscore.js"></script>
-
-    <script src="bower_components/angular-underscore/angular-underscore.js"></script>
-
-    <script src="bower_components/cr-bootstrap-navbar/src/cr-bootstrap-navbar.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/underscore/underscore.js"></script>
+<script src="bower_components/angular-underscore/angular-underscore.js"></script>
+<script src="bower_components/cr-bootstrap-navbar/src/cr-bootstrap-navbar.js"></script>
 
 ```
 
@@ -36,7 +32,7 @@ Here is the gist of how it works:
 
 Suppose we wanted to create the following navbar using data in UI Router's state configurations:
 
-
+![Layout](/images/demo_layout.png)
 
 In your HTML, where you want your navbar, you'd place the directive and first and second level `ui-views`:
 
@@ -71,7 +67,7 @@ In your HTML, where you want your navbar, you'd place the directive and first an
 
 In your app configuration, you'd specify the states as *groups* of links. This is done by adding a `bsNav` property to the [custom data](https://github.com/angular-ui/ui-router/wiki#attach-custom-data-to-state-objects) object of the UI Router state you want to show up in the navbar. For this example it would look like this:
 
-```javscript
+```javascript
 
 angular
     .module('myApp', [
