@@ -11,7 +11,7 @@ Check out the **[Demo](http://rodrigomartell.com/demos/cr-bootstrap-navbar/#/rea
 
 It is fully intended to be used in conjunction with [Angular UI-Router](https://github.com/angular-ui/ui-router) so you'll need that, as well as [bootstrap](http://getbootstrap.com/), [underscore](http://underscorejs.org/), and [angular-underscore](https://github.com/andresesfm/angular-underscore-module). These will all be installed by the following if you don't already have them:
 
-`bower install --save cr-bootstrap-navbar`
+`bower install --save angular-bootstrap-navbar`
 
 Then make sure your project includes all of the dependencies:
 
