@@ -211,19 +211,6 @@ bsNav : {
 }
 ```
 
-`bsNav : {`
-
-**type:** "link" (*default*), "dropDownLink" (a link with sub-links in a dropdown) or "brand" (a right-aligned link with `brand` class),
-
-**textDisplay:** The text to display on the navbar for this state,
-
-**group:** The link group `ul` this link belongs to,
-
-**align:** Whether to align the link group left (default) or right. It only needs to be declared on the first state belonging to the link group
-
-`}`
-
-
 ## Limitations/To-Dos
 
 * Test coverage is undercooked.
