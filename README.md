@@ -176,7 +176,6 @@ angular
                     url  : '/user',
                     data : {
                         bsNav : {
-                            isDropdown  : true,
                             textDisplay : 'Pippo',
                             group       : 2
                         }
