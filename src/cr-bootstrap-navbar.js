@@ -23,7 +23,7 @@ angular.module('cr.bootstrap.navbar', ['ui.router', 'angular-underscore'])
                             '<span class="icon-bar"></span>' + 
                             '<span class="icon-bar"></span>' + 
                           '</button>' + 
-                          '<a class="navbar-brand" href="#" ng-if="stateNavConfigs.brand">' + 
+                          '<a class="navbar-brand" ui-sref="{{ stateNavConfigs.brand._state.name }}" ng-if="stateNavConfigs.brand">' + 
                              '{{stateNavConfigs.brand.textDisplay}}' + 
                           '</a>' + 
                         '</div>' + 
